@@ -1,0 +1,118 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter a distance in kilometer: 10\n",
+      "The distance in miles is:\n",
+      "6.211180124223602\n"
+     ]
+    }
+   ],
+   "source": [
+    "x=float(input(\"Enter a distance in kilometer: \"))\n",
+    "y=x/1.61\n",
+    "print(\"The distance in miles is:\")\n",
+    "print(float(y))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter a distance traveled in kilometer: 10\n",
+      "Enter the minutes spent: 42\n",
+      "Enter the seconds spent: 42\n",
+      "\n",
+      "The average pace in seconds per mile is:\n",
+      "409.92 sec per mile\n",
+      "\n",
+      "The average pace in minutes per mile is:\n",
+      "6.83 min per mile\n",
+      "\n",
+      "The average speed in miles per hour is:\n",
+      "8.78 mph\n"
+     ]
+    }
+   ],
+   "source": [
+    "x=float(input(\"Enter a distance traveled in kilometer: \"))\n",
+    "y=float(input(\"Enter the minutes spent: \"))\n",
+    "z=float(input(\"Enter the seconds spent: \"))\n",
+    "\n",
+    "# km to mile\n",
+    "h=x/1.6\n",
+    "\n",
+    "# minutes to seconds\n",
+    "a=y*60\n",
+    "\n",
+    "# seconds to minutes\n",
+    "b=z/60\n",
+    "\n",
+    "# total seconds\n",
+    "c=(z+a)/h\n",
+    "\n",
+    "# total minutes\n",
+    "d=(y+b)/h\n",
+    "\n",
+    "# minutes to hours\n",
+    "e=y/60\n",
+    "\n",
+    "# seconds to hours\n",
+    "f=z/3600\n",
+    "\n",
+    "# total hours\n",
+    "g=h/(e+f)\n",
+    "\n",
+    "print()\n",
+    "print(\"The average pace in seconds per mile is:\")\n",
+    "print(\"%.2f\"%c + \" sec per mile\")\n",
+    "print()\n",
+    "print(\"The average pace in minutes per mile is:\")\n",
+    "print(\"%.2f\"%d + \" min per mile\")\n",
+    "print()\n",
+    "print(\"The average speed in miles per hour is:\")\n",
+    "print(\"%.2f\"%g + \" mph\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.0"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
